@@ -1,0 +1,29 @@
+header {
+    background-color: bisque;
+}
+#header-content {
+    height: 75px;
+}
+#nav {
+    display: flex;
+    background-color: darkslategray;
+    align-items: end;
+}
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px;
+}
+#main {
+    background-color: cadetblue;
+    grid-column: 1/6;
+}
+#aside {
+    background-color: burlywood;
+    grid-column: 6/8;
+}
+
+footer {
+    background-color: bisque;
+    height: 75px;
+}
