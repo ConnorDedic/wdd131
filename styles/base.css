@@ -40,6 +40,7 @@ html,body {
 header {
     background-color: var(--headline-color-on-white);
     font-family: var(--heading-font);
+    text-align: center;
 }
 #header-content {
     height: 75px;
