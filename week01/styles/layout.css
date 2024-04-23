@@ -9,9 +9,6 @@ nav {
     line-height: 4em;
     font-size: 1.2em;
     background-color: goldenrod;
-    overflow: hidden;
-    text-align: center;
-    list-style: none;
     justify-content: center;
 
 }
