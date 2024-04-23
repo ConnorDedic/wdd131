@@ -5,16 +5,19 @@ header {
     height: 75px;
 }
 nav {
-    margin: auto;
+    line-height: 4em;
+    text-align: center;
+    font-size: 1.2em;
+    list-style-type: none;
+    display: flex;
 
 }
 
 nav a{
-    display: block;
-    color: aliceblue;
-    display: flex;
-    background-color: darkslategray;
-    align-items: end;
+    padding:0em;
+    min-width: 120px;
+    text-decoration: none;
+    padding: 0px;
 }
 
 nav a:hover {
