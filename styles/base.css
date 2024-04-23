@@ -131,7 +131,7 @@ img[src*="images/me_on_bridge.jpg"] {
     font-family: var(--paragraph-font);
     z-index: 1;
 }
-#aside-content h1{
+#aside-content h2{
     text-align: center;
 }
 #aside-content {
