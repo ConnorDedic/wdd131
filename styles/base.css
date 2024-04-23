@@ -125,14 +125,14 @@ img[src*="images/me_on_bridge.jpg"] {
 
 #aside-content-body {
     grid-column: 6/8;
-    grid-row: 0/2;
+    grid-row: 1/2;
     font-family: var(--paragraph-font);
     z-index: 1;
 }
 
 #aside-content {
     grid-column: 6/8;
-    grid-row: 0/2;
+    grid-row: 1/2;
     border-radius: 10px;
     z-index: 2;
     background-color: var(--ecru);
