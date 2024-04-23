@@ -31,7 +31,7 @@
     --nav-hover-background-color: #b27676ff;
 }
 header {
-    background-color: bisque;
+    background-color: var(--headline-color-on-white);
 }
 #header-content {
     height: 75px;
@@ -56,7 +56,7 @@ nav a{
 
 nav a:hover {
     font-weight: bold;
-    background-color: burlywood;   
+    background-color: var(--nav-hover-background-color);   
 }
 
 nav a:link, nav a:visited {
