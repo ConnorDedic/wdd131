@@ -85,14 +85,25 @@ nav a:link, nav a:visited {
 #main-content {
     background-color: var(--primary-color);
     grid-column: 1/6;
-
+    grid-row: 1/2;
+    font-family: var(--paragraph-font);
 }
+
+img[src*="images/me_on_bridge.jpg"] {
+    width: 350px;
+    height: auto;
+    grid-column: 4/6;
+    grid-row: 1/2;
+    margin: auto;
+}
+
 #aside-content {
     background-color: var(--accent1-color);
     grid-column: 6/8;
+    font-family: var(--paragraph-font);
 }
 
 footer {
     background-color: var(--secondary-color);
-    height: 75px;
+    height: 100px;
 }
