@@ -14,11 +14,11 @@ nav {
 }
 
 nav a{
+    float: right;
     padding:0em;
     min-width: 120px;
     text-decoration: none;
     padding: 0px;
-    float: right;
 }
 
 nav a:hover {
