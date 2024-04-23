@@ -30,24 +30,23 @@
     --nav-hover-link-color: #ebfbe7ff;
     --nav-hover-background-color: #b27676ff;
 }
-html, body {
+/* html, body {
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
 
-
-}
+} */
 header {
     background-color: var(--headline-color-on-white);
     font-family: var(--heading-font);
     text-align: center;
 
 }
-#header-content {
+/* #header-content {
     height: 75px;
-}
+} */
 nav {
     display: flex;
     line-height: 4em;
