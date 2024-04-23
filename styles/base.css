@@ -82,20 +82,20 @@ nav a:link, nav a:visited {
     font-family: var(--paragraph-font);
     background-color: var(--headline-color-on-white);
 }
-main {
-    max-width: auto;
-}
+
 #main-content-body {
     background-color: var(--primary-color);
     grid-column: 1/6;
     grid-row: 1/2;
     font-family: var(--paragraph-font);
+    max-width: 1600px;
 }
 
 #main-content {
     grid-column: 1/4;
     grid-row: 1/2;
     border-radius: 10px;
+    max-width: 1600px;
 }
 .card {
     border: 5px solid black;
