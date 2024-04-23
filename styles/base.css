@@ -36,11 +36,13 @@ html,body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
+    margin-top: 0%;
 }
 header {
     background-color: var(--headline-color-on-white);
     font-family: var(--heading-font);
     text-align: center;
+    justify-content: center;
 }
 #header-content {
     height: 75px;
@@ -49,10 +51,9 @@ nav {
     display: flex;
     line-height: 4em;
     font-size: 1.2em;
-    background-color: var(--nav-background-color);
+    background-color: var(--rich-black);
     justify-content: center;
     text-align: center;
-
 }
 
 nav a{
