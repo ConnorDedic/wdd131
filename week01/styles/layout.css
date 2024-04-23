@@ -9,6 +9,19 @@ header {
     background-color: darkslategray;
     align-items: end;
 }
+
+#navigation a{
+    display: block;
+    color: aliceblue;
+
+
+}
+
+#navigation a:hover {
+    font-weight: 900;
+
+}
+
 .content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
