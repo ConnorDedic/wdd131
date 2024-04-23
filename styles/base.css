@@ -30,7 +30,7 @@
     --nav-hover-link-color: #ebfbe7ff;
     --nav-hover-background-color: #b27676ff;
 }
-* {
+html, body {
     width: 100%;
     height: 100%;
     margin: 0px;
