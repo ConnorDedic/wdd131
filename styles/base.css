@@ -16,7 +16,7 @@
     --accent3-color: #b27676ff;
 
     /* change the values below to your chosen font(s) */
-    --heading-font: Spectral;
+    --heading-font: Spectral, sans-serif;
     --paragraph-font: Merriweather, sans-serif;
 
     /* these colors below should be chosen from among your palette colors above */
@@ -32,6 +32,7 @@
 }
 header {
     background-color: var(--headline-color-on-white);
+    font-family: var(--heading-font);
 }
 #header-content {
     height: 75px;
@@ -42,6 +43,7 @@ nav {
     font-size: 1.2em;
     background-color: var(--nav-background-color);
     justify-content: center;
+    text-align: center;
 
 }
 
@@ -69,9 +71,14 @@ nav a:link, nav a:visited {
     grid-template-rows: 300px;
     text-align: center;
 }
+body {
+    margin: 0;
+    padding: 0;
+}
 #main {
     background-color: var(--primary-color);
     grid-column: 1/6;
+    font-family: var(--paragraph-font);
 }
 #aside {
     background-color: var(--accent1-color);
