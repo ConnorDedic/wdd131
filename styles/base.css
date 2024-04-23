@@ -30,6 +30,10 @@
     --nav-hover-link-color: #ebfbe7ff;
     --nav-hover-background-color: #b27676ff;
 }
+* {
+    margin: 0;
+    padding: 0;
+}
 header {
     background-color: var(--headline-color-on-white);
     font-family: var(--heading-font);
@@ -71,10 +75,7 @@ nav a:link, nav a:visited {
     grid-template-rows: 300px;
     text-align: center;
 }
-body {
-    margin: 0;
-    padding: 0;
-}
+
 #main {
     background-color: var(--primary-color);
     grid-column: 1/6;
