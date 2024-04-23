@@ -5,11 +5,11 @@ header {
     height: 75px;
 }
 nav {
-    line-height: 4em;
-    text-align: center;
-    font-size: 1.2em;
-    list-style-type: none;
     display: flex;
+    line-height: 4em;
+    font-size: 1.2em;
+    background-color: azure;
+    overflow: hidden;
 
 }
 
@@ -22,9 +22,8 @@ nav a{
 }
 
 nav a:hover {
-    font-weight: 900;
-    color: #000;
-    background-color: #000;    
+    font-weight: 1100;
+    background-color: burlywood;   
 
 }
 
