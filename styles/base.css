@@ -109,7 +109,7 @@ img[src*="images/me_on_bridge.jpg"] {
     padding: 5px;
 }
 
-img[src*="images/usaflag.png"] {
+/* img[src*="images/usaflag.png"] {
     width: 200px;
     height: auto;
     grid-column: 3/4;
@@ -119,7 +119,7 @@ img[src*="images/usaflag.png"] {
     border: 4px solid var(--rich-black);
     padding: 5px;
     z-index: 2;
-}
+} */
 
 #aside-content-body {
     background-color: var(--accent1-color);
