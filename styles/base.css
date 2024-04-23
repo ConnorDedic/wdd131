@@ -44,9 +44,9 @@ header {
     text-align: center;
 
 }
-/* #header-content {
+#header-content {
     height: 75px;
-} */
+}
 nav {
     display: flex;
     line-height: 4em;
@@ -82,12 +82,12 @@ nav a:link, nav a:visited {
     font-family: var(--paragraph-font);
 }
 
-#main {
+#main-content {
     background-color: var(--primary-color);
     grid-column: 1/6;
 
 }
-#aside {
+#aside-content {
     background-color: var(--accent1-color);
     grid-column: 6/8;
 }
