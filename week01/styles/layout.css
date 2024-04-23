@@ -8,8 +8,9 @@ nav {
     display: flex;
     line-height: 4em;
     font-size: 1.2em;
-    background-color: azure;
+    background-color: goldenrod;
     overflow: hidden;
+    text-align: center;
 
 }
 
