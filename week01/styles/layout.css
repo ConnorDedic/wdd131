@@ -9,19 +9,23 @@ header {
 
 }
 
-.navigation a{
+nav a{
     display: block;
     color: aliceblue;
     display: flex;
     background-color: darkslategray;
     align-items: end;
+}
 
+nav a:hover {
+    font-weight: 900;
+    color: #000;
+    background-color: #000;    
 
 }
 
-.navigation a:hover {
-    font-weight: 900;
-
+nav a:link, nav a:visited {
+    color: blueviolet;
 }
 
 .content {
