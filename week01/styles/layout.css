@@ -18,6 +18,7 @@ nav a{
     min-width: 120px;
     text-decoration: none;
     padding: 0px;
+    float: right;
 }
 
 nav a:hover {
