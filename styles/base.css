@@ -82,7 +82,9 @@ nav a:link, nav a:visited {
     font-family: var(--paragraph-font);
     background-color: var(--headline-color-on-white);
 }
-
+main {
+    max-width: auto;
+}
 #main-content-body {
     background-color: var(--primary-color);
     grid-column: 1/6;
