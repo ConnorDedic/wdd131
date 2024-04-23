@@ -136,6 +136,10 @@ img[src*="images/me_on_bridge.jpg"] {
     border-radius: 10px;
     z-index: 2;
     background-color: var(--ecru);
+    text-align: left;
+}
+#aside-content h1{
+    text-align: center;
 }
 
 footer {
