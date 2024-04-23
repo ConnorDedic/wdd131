@@ -129,7 +129,9 @@ img[src*="images/me_on_bridge.jpg"] {
     font-family: var(--paragraph-font);
     z-index: 1;
 }
-
+#aside-content h1{
+    text-align: center;
+}
 #aside-content {
     grid-column: 6/8;
     grid-row: 1/2;
@@ -138,9 +140,7 @@ img[src*="images/me_on_bridge.jpg"] {
     background-color: var(--ecru);
     text-align: left;
 }
-#aside-content h1{
-    text-align: center;
-}
+
 
 footer {
     background-color: var(--secondary-color);
