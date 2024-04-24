@@ -149,6 +149,7 @@ footer {
     height: 100px;
     text-align: center;
     font-family: var(--paragraph-font);
+    font-size: large;
     color: var(--rich-black);
 
 }

@@ -49,4 +49,5 @@ nav a:link, nav a:visited {
 footer {
     background-color: bisque;
     height: 75px;
+    font-family: --para;
 }
