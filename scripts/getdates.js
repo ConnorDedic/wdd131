@@ -1,2 +1,2 @@
+document.getElementById("lastmod").innerHTML = document.lastModified;
 
-document.getElementById("lastmod").innerHTML.write(document.lastModified)
