@@ -1,2 +1,2 @@
-var last = document.lastModified;
-document.getElementById("lastmod").innerHTML = "The document was last modified on : " + last;
+
+document.getElementById("lastmod").innerHTML.write(document.lastModified)
