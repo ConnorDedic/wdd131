@@ -173,7 +173,7 @@ img[src*="images/usaflag.png"] {
 
 footer {
     display: grid;
-    grid-template-columns: 1fr 600px 100px 1fr;
+    grid-template-columns: 1fr 375px 150px 1fr;
     grid-template-rows: 25px 125px ;
     background-color: var(--secondary-color);
     height: 200px;
