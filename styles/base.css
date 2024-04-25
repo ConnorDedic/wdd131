@@ -159,7 +159,7 @@ footer {
     height: 200px;
     text-align: center;
     font-family: var(--paragraph-font);
-    font-size: large;
+    font-size: larger;
     color: var(--rich-black);
     border: 10px solid var(--ecru);
 
