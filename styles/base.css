@@ -191,7 +191,7 @@ footer {
     justify-content: center;
 }
 
-img[src*="images/logo (static)-4.png (1).png"] {
+img[src*="images/logo-static.png"] {
     position: relative;
     z-index: 2;
     justify-content: center;
@@ -199,7 +199,7 @@ img[src*="images/logo (static)-4.png (1).png"] {
 
 
 }
-img[src*="images/logo gif.gif"] {
+img[src*="images/logo-gif.gif"] {
     position: relative;
     z-index: 1;
     bottom: 89.6px;
