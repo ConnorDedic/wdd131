@@ -60,16 +60,17 @@ nav {
 }
 
 nav a{
+    display: flex;
     padding:0em;
     min-width: 120px;
     text-decoration: none;
     padding: 0px;
-    display: flex;
     text-decoration: none;
     border-bottom: 8px solid transparent;
     width: 100%;
     justify-content: center;
     font-size: larger;
+
 
 }
 
