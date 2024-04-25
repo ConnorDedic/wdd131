@@ -36,12 +36,14 @@ html, body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
+    background-color: var(--honeydew);
 
 }
 header {
-    background-color: var(--headline-color-on-white);
+    background-color: var(--honeydew);
     font-family: var(--heading-font);
     text-align: center;
+    border: 10px solid var(--accent1-color);
 
 }
 #header-content {
@@ -51,7 +53,7 @@ nav {
     display: flex;
     line-height: 4em;
     font-size: 1.2em;
-    background-color: var(--nav-background-color);
+    background-color: var(--honeydew);
     justify-content: center;
     text-align: center;
 }
@@ -63,11 +65,12 @@ nav a{
     padding: 0px;
     display: block;
     text-decoration: none;
+    border-bottom: 8px solid transparent;
+
 }
 
 nav a:hover {
-    font-weight: bold;
-    background-color: var(--nav-hover-background-color);   
+    border-bottom: 8px solid var(--nav-hover-background-color);   
 }
 
 nav a:link, nav a:visited {
@@ -101,6 +104,9 @@ nav a:link, nav a:visited {
     border: 5px solid black;
     margin: 5px;
 }
+/* .card-header {
+    background-color: var(--accent2-color);
+} */
 img[src*="images/me_on_bridge.jpg"] {
     width: 350px;
     height: auto;
@@ -146,10 +152,11 @@ img[src*="images/me_on_bridge.jpg"] {
 
 footer {
     background-color: var(--secondary-color);
-    height: 100px;
+    height: 200px;
     text-align: center;
     font-family: var(--paragraph-font);
     font-size: large;
     color: var(--rich-black);
+    border: 10px solid var(--ecru);
 
 }
