@@ -108,10 +108,12 @@ nav a:link, nav a:visited {
 .card {
     border: 5px solid black;
     margin: 5px;
+    background-color: var(--honeydew);
 }
-/* .card-header {
-    background-color: var(--accent2-color);
-} */
+.card-header {
+    background-color: var(--ecru);
+    margin-top: auto;
+}
 img[src*="images/me_on_bridge.jpg"] {
     width: 350px;
     height: auto;
@@ -124,7 +126,7 @@ img[src*="images/me_on_bridge.jpg"] {
     background-color: var(--fern-green);
 }
 
-/* img[src*="images/usaflag.png"] {
+img[src*="images/usaflag.png"] {
     width: 200px;
     height: auto;
     grid-column: 1/2;
@@ -134,7 +136,7 @@ img[src*="images/me_on_bridge.jpg"] {
     border: 4px solid var(--rich-black);
     padding: 5px;
     z-index: 2;
-} */
+}
 
 #aside-content-body {
     grid-column: 6/8;
@@ -150,7 +152,6 @@ img[src*="images/me_on_bridge.jpg"] {
     grid-row: 1/2;
     border-radius: 10px;
     z-index: 2;
-    background-color: var(--ecru);
     text-align: left;
 }
 
