@@ -7,46 +7,55 @@ html, body {
 
 }
 header {
-    text-align: right;
-    font-size: larger;
+    background-color: #8B95C9;
+    color: antiquewhite;
+    font-size: xx-large;
 
 }
+nav {
+    display: flex;
+
+}
+
+nav a{
+
+}
+
+nav a:hover {
+  font: bold;
+  background-color: aliceblue;
+}
+
+
+
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: inline;
-    float: left;
+
 }
 li {
     list-style: none;
-    display: inline;
     float: left;
-    margin: 0;
-    padding: 0;
+
 }
-
+a {
+    padding: 10px;
+}
 main {
-
     display: grid;
     grid-template: 1fr 1fr 1fr/ 1fr 1fr 1fr;
     text-align: center;
     justify-content: center;
-    font-family: var(--paragraph-font);
-    background-color: var(--headline-color-on-white);
     font-size: larger;
 }
 footer {
     display: grid;
     grid-template-columns: 1fr 375px 150px 1fr;
     grid-template-rows: 25px 125px ;
-    background-color: var(--secondary-color);
     height: 200px;
     text-align: center;
-    font-family: var(--paragraph-font);
     font-size: larger;
-    color: var(--honeydew);
-    border: 10px solid var(--ecru);
+    background-color: #8B95C9;
+    color: antiquewhite;
 
 }
 #footer-text {
