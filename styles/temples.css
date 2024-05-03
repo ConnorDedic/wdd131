@@ -4,6 +4,15 @@ html, body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+    background-color: #8B95C9;
+    color: antiquewhite;
+    font-size: xx-large;
 }
 
 nav {
@@ -12,20 +21,17 @@ nav {
     font-size: 1.2em;
     text-align: left;
     font-size: larger;
+    flex-direction: row;
 }
 
 nav a{
     display: flex;
     flex-direction: row;
-    padding:0em;
-    min-width: 120px;
+    padding: 10px;
     text-decoration: none;
-    padding: 0px;
-    text-decoration: none;
-    border-bottom: 8px solid transparent;
-    width: 100%;
     font-size: larger;
     text-align: right;
+    flex: 1 1 100%;
 }
 
 nav a:hover {
@@ -36,6 +42,57 @@ nav a:link, nav a:visited {
     color: blueviolet;
 }
 
+/* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: #333;
+	color: #fff;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+.active::before { 
+	content: "📍";  /* just a wayfinding symbol for the user */
+}
+.open a {
+	display: block;
+}
 
 main {
     display: grid;
@@ -68,19 +125,3 @@ footer {
     z-index: 6;
 }
 
-img[src*="wdd131/images/logo-static-png"] {
-    z-index: 1;
-    display: none;
-
-
-}
-img[src*="images/logo-gif.gif"] {
-    z-index: 1;
-    display: none;
-
-}
-.logo {
-    grid-row: 1/2;
-    grid-column: 3/4;
-
-}
