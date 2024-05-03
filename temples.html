@@ -6,8 +6,9 @@
     <title>Temples</title>
     <script src="scripts/temples.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
-    <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width:768px)">
-    <link rel="stylesheet" href="styles/temples.css" media="screen and (m-width:768px)">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <!-- <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width:768px)"> -->
+    <!-- <link rel="stylesheet" href="styles/temples.css" media="screen and (m-width:768px)">  -->
     <meta name="author" content="Connor Dedic" >
     <meta
       name="description"
@@ -18,38 +19,21 @@
     <meta property="og:url" content="https://connordedic.github.io/wdd131">
     <meta property="og:image" content="https://connordedic.github.io/wdd131/images/san_diego_california_temple.jpeg">
 </head>
-
 <body>
-    <header>
-        <nav class="navbar">
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Old</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">New</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Small</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Large</a>
-                </li>
-                
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
-
-    </header>
-
-    <main>
+    <nav class="navbar">
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="menu" id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="main">
         <figure>
             <img src="images/san_diego_california_temple.jpeg" alt="SDtemple">
             <figcaption>San Diego California</figcaption>
@@ -87,21 +71,12 @@
             <figcaption>San Diego California</figcaption>
         </figure>
     </div>
+    <script src="script.js"></script>
 
-
-    </main>
-
-    <footer>
-        <div class="logo">
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img class="static-img" src="images/logo-static.png" alt="img" height="100" width="100"></a>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img class="active-img" src="images/logo-gif.gif" alt="gif" height="100" width="100"></a>
-        </div>
-        <div id="footer-text">
-            <p><br><br><span id="currentyear"> Connor Dedic, Idaho</span></p>
-            <p>Last Modification: <span id="lastmod"></span></p>
-        </div>
-
-    </footer>
-
+            
+    <div id="footer-text">
+        <p><br><br><span id="currentyear"> Connor Dedic, Idaho</span></p>
+        <p>Last Modification: <span id="lastmod"></span></p>
+    </div>
 </body>
 </html>
