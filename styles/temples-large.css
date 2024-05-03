@@ -42,11 +42,13 @@ main {
     display: grid;
     grid-template: 1fr 1fr 1fr/ 1fr 1fr 1fr;
     text-align: center  ;
+    text-align: center  ;
     justify-content: center;
     font-size: larger;
 }
 footer {
     display: grid;
+    grid-template-columns: 1fr 375px 1fr;
     grid-template-columns: 1fr 375px 1fr;
     grid-template-rows: 25px 125px ;
     height: 200px;
