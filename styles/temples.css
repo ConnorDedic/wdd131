@@ -4,20 +4,14 @@ html, body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
-    background-color: var(--honeydew);
-
-}
-header {
-    text-align: center;
 }
 
 nav {
     display: flex;
     line-height: 4em;
     font-size: 1.2em;
-    background-color: var(--honeydew);
     justify-content: center;
-    text-align: center;
+    text-align: right;
     font-size: larger;
 }
 
@@ -30,9 +24,8 @@ nav a{
     text-decoration: none;
     border-bottom: 8px solid transparent;
     width: 100%;
-    justify-content: center;
     font-size: larger;
-
+    text-align: right;
 }
 
 nav a:hover {
@@ -42,7 +35,7 @@ nav a:hover {
 nav a:link, nav a:visited {
     color: blueviolet;
 }
-.sammich {
+.navbar {
     display: block;
 }
 
@@ -54,6 +47,7 @@ main {
     font-family: var(--paragraph-font);
     background-color: var(--headline-color-on-white);
     font-size: larger;
+    justify-content: center;
 }
 
 figcaption {
@@ -86,6 +80,6 @@ img[src*="images/logo-static.png"] {
 }
 img[src*="images/logo-gif.gif"] {
     position: relative;
-    visibility: collapse;
+    visibility: hidden;
 
 }
