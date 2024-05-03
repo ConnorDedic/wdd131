@@ -1,108 +1,4 @@
-/* html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-    margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-} 
-
-header {
-    background-color: #8B95C9;
-    color: antiquewhite;
-    font-size: xx-large;
-}
-
-/*  */
 /* Styles for the hamburger menu */
-/* .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-}
-
-.hamburger-menu {
-    display: none; 
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.bar {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 3px 0;
-}
-
-.menu {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.menu li {
-    margin-right: 20px;
-}
-
-.menu li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-@media (max-width: 768px) {
-    .hamburger-menu {
-        display: flex; 
-    }
-
-    .menu {
-        display: none; 
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: #333;
-        width: 100%;
-        padding: 20px;
-    }
-
-    .menu.active {
-        display: flex; 
-    }
-}
-
-
-nav a:link, nav a:visited {
-    color: blueviolet;
-}
-main {
-    display: grid;
-    grid-template: 1fr;
-    text-align: center;
-    font-size: larger;
-    justify-content: center;
-}
-figcaption {
-    text-align: center;
-}
-footer {
-    background-color: burlywood;
-    text-align: center;
-    font-size: larger;
-    z-index: 5;
-}
-#footer-text {
-    text-align: center;
-    justify-content: center;
-    z-index: 6;
-}  */
-
-
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -113,7 +9,7 @@ footer {
 }
 
 .hamburger-menu {
-    display: none; 
+    display: none; /* Hidden by default */
     flex-direction: column;
     cursor: pointer;
 }
@@ -141,26 +37,27 @@ footer {
     text-decoration: none;
 }
 
+/* Media query for mobile */
 
-@media (max-width: 768px) {
-    .hamburger-menu {
-        display: flex; 
-
-    .menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: #333;
-        width: 100%;
-        padding: 20px;
-    }
-
-    .menu.active {
-        display: flex;
-    }
+.hamburger-menu {
+    display: flex; /* Display when screen size is less than 768px */
 }
+
+.menu {
+    display: none; /* Hide menu by default on smaller screens */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust top position as per your design */
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    padding: 20px;
+}
+
+.menu.active {
+    display: flex; /* Show menu when active */
+}
+
 main {
     display: grid;
     grid-template: 1fr 1fr 1fr/ 1fr 1fr 1fr;
@@ -185,4 +82,3 @@ footer {
     text-align: center;
     justify-content: center;
 }
-
