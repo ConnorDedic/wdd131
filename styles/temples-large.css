@@ -7,8 +7,8 @@
     color: #fff;
     padding: 10px 20px;
 }
-nav:hover {
-    font-size: larger;
+nav.a:hover {
+    font-size: bold;
 }
 .hamburger-menu {
     display: none; 
@@ -43,6 +43,9 @@ header {
     text-align: center;
 }
 main {
+    text-align: center;
+}
+#content {
     display: grid;
     grid-template: 1fr 1fr 1fr/ 1fr 1fr 1fr;
     text-align: center;
