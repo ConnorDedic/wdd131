@@ -37,27 +37,7 @@
     text-decoration: none;
 }
 
-/* Media query for mobile */
-@media (max-width: 768px) {
-    .hamburger-menu {
-        display: flex; /* Display when screen size is less than 768px */
-    }
 
-    .menu {
-        display: none; /* Hide menu by default on smaller screens */
-        flex-direction: column;
-        position: absolute;
-        top: 60px; /* Adjust top position as per your design */
-        left: 0;
-        background-color: #333;
-        width: 100%;
-        padding: 20px;
-    }
-
-    .menu.active {
-        display: flex; /* Show menu when active */
-    }
-}
 main {
     display: grid;
     grid-template: 1fr 1fr 1fr/ 1fr 1fr 1fr;
@@ -82,5 +62,3 @@ footer {
     text-align: center;
     justify-content: center;
 }
-
-
