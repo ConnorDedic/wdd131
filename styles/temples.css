@@ -2,16 +2,19 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: right;
     background-color: #333;
     color: #fff;
     padding: 10px 20px;
+    margin: 0%;
+
 }
 
 .hamburger-menu {
     display: none; /* Hidden by default */
     flex-direction: column;
     cursor: pointer;
+
 }
 
 .bar {
@@ -19,6 +22,7 @@
     height: 3px;
     background-color: #fff;
     margin: 3px 0;
+    
 }
 
 .menu {
@@ -26,6 +30,16 @@
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    padding: 20px;
+    
+    
 }
 
 .menu li {
@@ -37,26 +51,16 @@
     text-decoration: none;
 }
 
-
 .hamburger-menu {
     display: flex; 
+    
 }
-
-.menu {
-    display: none; 
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    background-color: #333;
-    width: 100%;
-    padding: 20px;
-}
-
 .menu.active {
     display: flex;
 }
-
+header {
+    text-align: center;
+}
 main {
     display: grid;
     grid-template-columns: 1fr;
