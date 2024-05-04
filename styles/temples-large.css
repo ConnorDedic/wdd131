@@ -9,7 +9,7 @@
 }
 
 .hamburger-menu {
-    display: none; /* Hidden by default */
+    display: none; 
     flex-direction: column;
     cursor: pointer;
 }
@@ -61,7 +61,7 @@ footer {
     height: 200px;
     text-align: center;
     font-size: larger;
-    background-color: #8B95C9;
+    background-color: #333;
     color: antiquewhite;
 
 }
