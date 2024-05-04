@@ -8,7 +8,7 @@
     padding: 10px 20px;
 }
 nav.a:hover {
-    font-size: bold;
+    font-size: larger;
 }
 .hamburger-menu {
     display: none; 
