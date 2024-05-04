@@ -41,10 +41,17 @@
 main {
     display: grid;
     grid-template: 1fr 1fr 1fr/ 1fr 1fr 1fr;
-    text-align: center  ;
+    text-align: center;
     justify-content: center;
     font-size: larger;
 }
+figure {
+    grid-row: auto;
+}
+figurecaption {
+    text-align: center;
+}
+
 footer {
     display: grid;
     grid-template-columns: 1fr 375px 1fr;

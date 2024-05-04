@@ -39,14 +39,14 @@
 
 
 .hamburger-menu {
-    display: flex; /* Display when screen size is less than 768px */
+    display: flex; 
 }
 
 .menu {
-    display: none; /* Hide menu by default on smaller screens */
+    display: none; 
     flex-direction: column;
     position: absolute;
-    top: 60px; /* Adjust top position as per your design */
+    top: 60px;
     left: 0;
     background-color: #333;
     width: 100%;
@@ -54,12 +54,12 @@
 }
 
 .menu.active {
-    display: flex; /* Show menu when active */
+    display: flex;
 }
 
 main {
     display: grid;
-    grid-template: 1fr 1fr 1fr/ 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     text-align: center  ;
     justify-content: center;
     font-size: larger;
@@ -71,7 +71,7 @@ footer {
     height: 200px;
     text-align: center;
     font-size: larger;
-    background-color: #8B95C9;
+    background-color: #333;
     color: antiquewhite;
 
 }
