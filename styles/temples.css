@@ -40,21 +40,21 @@
     
 }
 
+
 .menu li {
     margin-right: 20px;
 }
-
 .menu li a {
     color: #fff;
     text-decoration: none;
 }
-
 .hamburger-menu {
     display: flex; 
     
 }
 .menu.active {
     display: flex;
+
 }
 header {
     text-align: center;

@@ -15,7 +15,9 @@ nav.a:hover {
     flex-direction: column;
     cursor: pointer;
 }
-
+.disable.active {
+    display: none;
+}
 .bar {
     width: 30px;
     height: 5px;
