@@ -7,6 +7,7 @@ header {
     font-weight: bolder;
     background-color: #FFFFFF;
     border-bottom: #0036A7 solid 15px;
+    font-size: x-large;
 }
 
 main {
@@ -15,6 +16,8 @@ main {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     background-color: #D62718;
     text-align: center;
+    font-size: xx-large;
+    justify-content: center;
 }
 img[src*="images/large-hero.webp"] {
     grid-column: 1/4;
