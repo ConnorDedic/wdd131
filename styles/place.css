@@ -94,7 +94,7 @@ img[src*="images/logo-static.png"] {
 img[src*="images/logo-gif.gif"] {
     position: relative;
     z-index: 1;
-    bottom: 91px;
+    bottom: 90px;
     justify-content: center;
     border-radius: 15px;
 
