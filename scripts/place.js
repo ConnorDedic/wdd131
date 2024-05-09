@@ -1,5 +1,5 @@
 // defining variables for weather factors (temp in Celcius and wind speed in  km/h)
-const temp = 8;
+const temp = 12;
 const windSpeed = 21;
 
 // Wind chill function
