@@ -7,4 +7,11 @@ img[src*="images/large-hero.webp"] {
 
 img[src*="images/mobile-hero.webp"] {
     display: flex;
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
 }
