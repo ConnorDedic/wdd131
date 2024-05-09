@@ -1,0 +1,10 @@
+
+
+
+img[src*="images/large-hero.webp"] {
+    display: none;
+}
+
+img[src*="images/mobile-hero.webp"] {
+    display: flex;
+}
