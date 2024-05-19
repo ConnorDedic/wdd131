@@ -85,14 +85,8 @@ const temples = [
     }
   ];
 
-createTempleCard(temples);
 
-// const oldbutton = document.querySelector("#old");
-// oldbutton.addEventListener("click", () => {
-//   let oldTemples = temples.filter(temple => temple.location.filter)
-// })
-
-function createTempleCard() {
+function createTempleCard(temples) {
   document.querySelector(".res-grid").innerHTML = "";
   temples.forEach(temple => {
     let card = document.createElement("section");
@@ -119,48 +113,7 @@ function createTempleCard() {
 		document.querySelector(".res-grid").appendChild(card);
   })
 }
-const homeLink = document.getElementById("home-link");
-const oldLink = document.getElementById("old-link");
-const newLink = document.getElementById("new-link");
-const largeLink = document.getElementById("large-link");
-const smallLink = document.getElementById("small-link");
-const heading = document.querySelector(" h3");
 
-createTemple(temples);
-
-// this code is  refering to a actual info when user click  the link
-homeLink.addEventListener("click", () => {
-  createTemple(temples);
-  heading.textContent = " Home ";
-});
-
-newLink.addEventListener("click", () => {
-  const newTemples = temples.filter((temple) => {
-    const year = new Date(temple.dedicated).getFullYear();
-    return year >= 2005 && year <= 2024;
-  });
-  createTemple(newTemples);
-  heading.textContent = "New"
-});
-
-oldLink.addEventListener("click", () => {
-	const newTemples = temples.filter((temple) => {
-	  const year = new Date(temple.dedicated).getFullYear();
-	  return  year < 2005;
-	});
-	createTemple(newTemples);
-	heading.textContent = "Old"
-  });
-
-largeLink.addEventListener("click", () => {
-  const largeTemples = temples.filter((temple) => temple.area >= 10000);
-  createTemple(largeTemples);
-  heading.textContent = "Large"
-});
-
-smallLink.addEventListener("click", () => {
-  const smallTemples = temples.filter((temple) => temple.area < 10000);
-  createTemple(smallTemples);
-  heading.textContent = "Small"
-});
  
+
+createTempleCard(temples);
