@@ -3,9 +3,17 @@ body {
 	justify-content: center;
 	text-align: center;
 }
-.select {}
-
-
+/* header {
+	border: grey solid 5px;
+} */
+.select {
+	height: 50px;
+}
+	
+.rating {
+	height: 75px;
+	
+}
 input[type="radio"] {
 	display: none;
 	position: relative;
@@ -16,6 +24,7 @@ input[type="radio"] {
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: center;
+
 }
 
 .stars > label {
@@ -41,10 +50,22 @@ input[type="radio"] {
 	content: "\2605";
 }
 
-.date {}
-.checkbox {}
-.textarea {}
-.text {}
+.date {
+	height: 50px;
+}
+.checkbox {
+	height: 100px;
+}
+.textarea {
+	height: 100px;
+}
+.text {
+	height: 60px;
+}
+
+.submit {
+	height: 50px;
+}
 
 
 footer {

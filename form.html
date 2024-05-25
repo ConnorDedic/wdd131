@@ -9,31 +9,34 @@
     <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h2>Form</h2>
-
+    <header><h2>Form</h2></header>
+    
         <div class="select">
         <form action="review.html" method="get">
-            <label for="productName">Product Name:</label>
+            <label for="productName"><b>Product Name:</b></label>
             <select id="productName" name="productName" required>
                 <option value="" disabled selected>Select an Option ...</option>
             </select>
         </div>
-
+        <div class="rating">
+        <label><b>Overall Rating</b></label>
         <div class="stars">
-            <label>Overall Rating</label>
             <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
             <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
             <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
             <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
             <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
         </div>
+        </div>    
 
+        <label for="install"><b>Date of Installation</b></label>
         <div class="date">
-            <label for="install">Date of Installation</label>
             <input type="date" id="install" name="install"> 
         </div>  
 
+        <label><b>Select a Quality</b></label>
         <div class="checkbox">
+            
             <input type="checkbox" id="qual1" name="qual1" value="durability">
             <label for="qual1"> Durabality</label><br>
             <input type="checkbox" id="qual2" name="qual2" value="ease">
@@ -45,12 +48,12 @@
         </div>  
 
         <div class="textarea">
-            <label for="w3review">Written Review: (optional)</label><br>
+            <label for="w3review"><b>Written Review: (optional)</b></label><br>
             <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
         </div>
 
         <div class="text">
-            <label for="fname">Name: (optional)</label><br>
+            <label for="fname"><b>Name: (optional)</b></label><br>
             <input type="text" id="fname" name="fname"><br><br>
         </div>
 
