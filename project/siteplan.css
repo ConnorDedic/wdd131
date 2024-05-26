@@ -1,0 +1,9 @@
+body {
+    font-family: Merriweather;
+    justify-content: center;
+    text-align: center;
+}
+#title-font {
+    font-family: Spectral;
+    font-size: x-large;
+}
