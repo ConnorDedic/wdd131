@@ -1,11 +1,23 @@
+header {
+	background-color: #C4A287;
+	border-radius: 15px;
+
+}
+
 body {
 	display: block;
+	border-radius: 15px;
 	justify-content: center;
 	text-align: center;
+	
 }
-/* header {
-	border: grey solid 5px;
-} */
+.main {
+	background-color: #9D9171;
+	border-radius: 15px;
+	margin-bottom: 15px;
+
+}
+
 .select {
 	height: 50px;
 }
@@ -73,9 +85,10 @@ footer {
     grid-template-columns: 1fr 375px 150px 1fr;
     grid-template-rows: 25px 125px ;
     height: 200px;
-    background-color: grey;
+    background-color: #C4A287;
     text-align: center;
     font-size: larger;
+	border-radius: 15px;
 }
 #footer-text {
     grid-row: 1/2;
