@@ -7,7 +7,9 @@
     --heading-font: "Spectral", Helvetica, sans-serif;
     --paragraph-font: "Merriweather", Helvetica, sans-serif;
 }
-
+img {
+    border-radius: 15px;
+}
 h1 h2 h3 {
     font-family: var(--heading-font);
 }
@@ -15,6 +17,7 @@ header {
     display: flex;
     text-align: center;
     border: 5px solid var(--accent2-color) ;
+    border-radius: 15px;
 }
 nav {
     display: flex;
@@ -24,6 +27,7 @@ nav {
     justify-content: center;
     text-align: center;
     font-size: larger;
+
 }
 
 nav a{
@@ -65,7 +69,22 @@ content {
     margin: 30px;
 }
 #hero-text {
-    color: #443627;
+    /* color: #443627;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center; */
+    grid-column: 2/3;
+    grid-row: 1/2;
 }
 #info {
     color: #443627;
@@ -75,12 +94,16 @@ content {
     height: 100%;
 }
 
-.hero-img {
-    display: block;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin: auto;
+#hero-img {
+    margin-top: -0px;
+    height: 100%;
+    width: 100%;
+    object-fit: fit;
+    border: 5px red;
+    border-radius: 10px;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    
 }
 
 /* cards animation */
