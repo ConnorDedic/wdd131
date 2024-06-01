@@ -50,7 +50,7 @@ nav a:hover {
 }
 
 /* body */
-content {
+main {
     display: grid;
     grid-template-columns: 1fr 300px 300px 300px;
     grid-template-rows: 400px 300px 300px;
@@ -344,7 +344,7 @@ footer {
     grid-column: 4/5;
     margin: auto;
 }
-content{
+main {
     min-height: 550px;
     
     
