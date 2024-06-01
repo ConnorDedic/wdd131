@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/style-desktop.css" media="screen and (min-width:768px)">
     <link rel="stylesheet" href="styles/style-mobile.css" media="screen and (max-width:768px)">
     <script src="#" defer></script>
+    <script src="scripts/script.js" defer></script>
     <!-- fonts information -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,12 +30,72 @@
 </head>
 <body>
   <header>
+    <h1>Mini Gallery</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="page2.html">Subpage 2</a>
       <a href="page3.html">Subpage 3</a>
     </nav>
   </header>
-    
+  <script src="scripts/tab.js"></script>
+  <div class="tabs">
+    <!--Picture Tabs -->
+    <div class = "content">
+      <!--Picture Tabs -->
+      <div class="pictureTab">
+          <button class='tablinks' onclick="openPic(event, 'pic1')" id="defaultOpen"><img src="images/spacemarine.jpg" style="height:250px; width:250px" alt="statue"></button>
+          <button class='tablinks' onclick="openPic(event, 'pic2')"><img src="images/spacemarine.jpg" style="height:250px; width:250px" alt="monk"></button>
+          <button class='tablinks' onclick="openPic(event, 'pic3')"><img src="images/spacemarine.jpg" style="height:250px; width:250px" alt="dragonborn"></button>
+          <button class='tablinks' onclick="openPic(event, 'pic4')"><img src="images/spacemarine.jpg" style="height:250px; width:250px" alt="napier"></button>
+          <button class='tablinks' onclick="openPic(event, 'pic5')"><img src="images/spacemarine.jpg" style="height:250px; width:250px" alt="space marine"></button>
+        </div>
+        
+  
+      <!--picTabContent-->
+      <div id = "pic1" class="tabcontent">
+          <h3>Statue</h3>
+          <p>This is a picture of a Lovecraftian statue that I painted. I used multiple colors to create an aging bronze patina effect.<br>
+          I used various colors from dark greens, dark silvers and golds to age the piece. 
+          </p>
+      </div>
+  
+      <div id = "pic2" class="tabcontent">
+          <h3>Monk</h3>
+          <p>This is a picture of a D&D frameworks monk mini that I painted. It's for a friends Dungeons & Dragon's campain.</p>
+      </div>
+          
+      <div id = "pic3" class="tabcontent">
+          <h3>Dragonborn</h3>
+          <p>This is picture of the first mini I ever painted. I painted it in 2021, and for being my first I am very pleased.</p>
+      </div>
+          
+      <div id = "pic4" class="tabcontent">
+          <h3>Warlock</h3>
+          <p>This is a D&D frameworks warlock mini that I painted. This model used <br> several pieces that were translucent.
+             I also am pretty proud of how the lamp <br> turned out. I really enjoyed shading it.
+          
+          </p>
+      </div>
+          
+      <div id = "pic5" class="tabcontent">
+          <h3>Spacemarine</h3>
+          <p>This is a Spacemarine from Warhammer: 40k. Warhammer is a grimdark science fantasy tabletop wargame. </p>
+      </div>
+
+  </div>
+
+<footer>
+  <div class="logo">
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img class="static-img" src="images/logo-static.png" alt="img" height="100" width="100"></a>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img class="active-img" src="images/logo-gif.gif" alt="gif" height="100" width="100"></a>
+  </div>
+  <div id="footer-text">
+      <p><br><br><span id="currentyear"> Connor Dedic, Idaho</span></p>
+      <p>Last Modification: <span id="lastmod"></span></p>
+  </div>
+</footer>
 </body>
+<script>
+  document.getElementById("defaultOpen").click();
+</script>
 </html>
