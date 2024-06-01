@@ -39,9 +39,9 @@
   </header>
 
 <div class="pg3">
-  <img id="img1" class="pg3-imgs" src="images/spacemarine.jpg" alt="1" width="250px" height="250px">
-  <img id="img2" class="pg3-imgs" src="images/spacemarine.jpg" alt="2" width="250px" height="250px">
-  <img id="img3" class="pg3-imgs" src="images/spacemarine.jpg" alt="3" width="250px" height="250px">
+  <img id="img1" class="pg3-imgs" src="images/spacemarine.jpg" alt="1" width="250px" height="250px" loading="lazy">
+  <img id="img2" class="pg3-imgs" src="images/spacemarine.jpg" alt="2" width="250px" height="250px" loading="lazy">
+  <img id="img3" class="pg3-imgs" src="images/spacemarine.jpg" alt="3" width="250px" height="250px" loading="lazy">
   <p id="txt1" class="pg3-txts">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus dolor earum voluptas excepturi delectus reiciendis, aperiam provident quo cum tenetur cupiditate eos nesciunt nobis exercitationem natus sint quia nulla minus.</p>
   <p id="txt2" class="pg3-txts">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi reprehenderit fuga nam esse accusamus deleniti molestias velit rerum consequatur perferendis, numquam doloremque qui recusandae architecto ipsum voluptatibus quod ipsa ratione.</p>
   <p id="txt3" class="pg3-txts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eaque cum qui reprehenderit saepe! Officia saepe magni neque aliquid sint repudiandae repellendus aliquam suscipit porro, autem, soluta voluptas odio quos?</p>
@@ -51,13 +51,13 @@
       <h3>If you would like me to send me a question, just fill out the form <br>and I'll get back to you!</h3>
 
       <label for="form-first">First name:</label><br>
-      <input type="text" id="form-first" name="form-first"><br>
+      <input type="text" id="form-first" name="form-first" required><br>
       <label for="form-last">Last name:</label><br>
-      <input type="text" id="form-last" name="form-last"><br><br>
+      <input type="text" id="form-last" name="form-last" required><br><br>
       <label for="form-email">Email:</label><br>
-      <input type="text" id="form-email" name="form-email"><br><br>
+      <input type="text" id="form-email" name="form-email" required><br><br>
 
-      <textarea name="message" rows="5" cols="30">Type your question here!</textarea><br> 
+      <textarea name="message" rows="5" cols="30" required>Type your question here!</textarea><br> 
 
       <label for="myfile">Upload an image of your model.</label><br><br>
       <input type="file" id="myfile" name="myfile"><br><br>
@@ -69,8 +69,8 @@
 
   <footer>
     <div class="logo">
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img class="static-img" src="images/logo-static.png" alt="img" height="100" width="100"></a>
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img class="active-img" src="images/logo-gif.gif" alt="gif" height="100" width="100"></a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img class="static-img" src="images/logo-static.png" loading="lazy" alt="img" height="100" width="100"></a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img class="active-img" src="images/logo-gif.gif" loading="lazy" alt="gif" height="100" width="100"></a>
     </div>
     <div id="footer-text">
         <p><br><br><span id="currentyear"> Connor Dedic, Idaho</span></p>
