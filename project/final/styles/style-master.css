@@ -287,35 +287,32 @@ footer {
 }
 /* Change background color of buttons on hover */
 .pictureTab button:hover {
-background-color: var(--accent2-color);
-border-radius: 15px;
+    background-color: var(--accent2-color);
+    border-radius: 15px;
 }
 /* Create an active/current tablink class */
 .pictureTab button.active {
-background-color: var(--accent3-color);
-border-radius: 15px;
-
+    background-color: var(--accent3-color);
+    border-radius: 15px;
 }
 /* Style the pictureTab content */
 .pictureTabcontent {
-display: none;
-border: 0px solid var(--accent1-color);
-border-top: none;
-margin: auto;
-text-align: center;
+    display: none;
+    border: 0px solid var(--accent1-color);
+    border-top: none;
+    margin: auto;
+    text-align: center;
 }
 .tabcontent {
-margin: auto;
-text-align: center;
-background-color: var(--secondary-color);
-border-bottom: 5px solid black;
-border-left: 5px solid black;
-border-right: 5px solid black;
-border-radius: 0px 0px 15px 15px;
-font-size: large;
-padding: 15px;
-z-index: 99;
-
+    margin: auto;
+    text-align: center;
+    background-color: var(--secondary-color);
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    border-radius: 0px 0px 15px 15px;
+    font-size: large;
+    padding: 15px;
 }
 #pic1 {
     height: 50%;
@@ -348,6 +345,17 @@ z-index: 99;
     margin: auto;
 }
 content{
-min-height: 550px;
+    min-height: 550px;
+    
 /* margin-bottom: 10px; */
 }  
+/* pg 3 */
+
+.pg3 {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+#tips-form {
+    grid-column: 3;
+    grid-row: 1/3;
+}
