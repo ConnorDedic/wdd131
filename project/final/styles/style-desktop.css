@@ -1,0 +1,436 @@
+:root {
+    --primary-color: #8EDCE6;
+    --secondary-color: #D5DCF9;
+    --accent1-color: #A7B0CA;
+    --accent2-color: #725E54;
+    --accent3-color: #443627;
+    --footer-color: #303036;
+    --light-font-color: white;
+    --heading-font: "Spectral", Helvetica, sans-serif;
+    --paragraph-font: "Merriweather", Helvetica, sans-serif;
+    background-color: honeydew;
+}
+img {
+    border-radius: 15px;
+}
+h1 h2 h3 {
+    font-family: var(--heading-font);
+}
+header {
+    font-family: var(--heading-font);
+    text-align: center;
+    border: 5px solid var(--accent3-color);
+    border-radius: 15px;
+
+}
+#header-content {
+    height: 70px;
+}
+nav {
+    display: flex;
+    line-height: 4em;
+    font-size: 1.2em;
+    justify-content: center;
+    text-align: center;
+    font-size: larger;
+}
+
+nav a{
+    display: flex;
+    padding: 0em;
+    min-width: 120px;
+    text-decoration: none;
+    padding: 0px;
+    text-decoration: none;
+    border-bottom: 10px solid transparent;
+    width: 100%;
+    justify-content: center;
+    font-size: larger;
+}
+
+nav a:hover {
+    border-bottom: 10px solid var(--accent1-color);   
+}
+footer {
+    display: grid;
+    grid-template-columns: 1fr 375px 150px 1fr;
+    grid-template-rows: 25px 125px ;
+    height: 200px;
+    margin-top: 100px;
+    background-color: var(--footer-color);
+    text-align: center;
+    font-size: larger;
+    border: 5px solid black;
+	border-radius: 15px;
+    color: var(--light-font-color);
+}
+#footer-text {
+    grid-row: 1/2;
+    grid-column: 2;
+    text-align: center;
+    justify-content: center;
+}
+
+
+@media (min-width: 700px) {
+	img[src*="images/logo-static.png"] {
+		position: relative;
+		z-index: 2;
+		justify-content: center;
+		bottom: -15px;
+		border-radius: 15px;
+
+
+	}
+	img[src*="images/logo-gif.gif"] {
+		position: relative;
+		z-index: 1;
+		bottom: 90px;
+		justify-content: center;
+		border-radius: 15px;
+
+
+	}
+
+	.logo {
+		grid-row: 2/3;
+		grid-column: 3/4;
+
+	}
+	.static-img {
+		position: relative;
+
+	}
+	.static-img:hover {
+	opacity: 0;
+
+	}
+}
+@media (max-width: 699px) {
+	img[src*="images/logo-static.png"] {
+		position: relative;
+		z-index: 2;
+		justify-content: center;
+		bottom: -15px;
+		border-radius: 15px;
+		display: none;
+
+
+	}
+	img[src*="images/logo-gif.gif"] {
+		position: relative;
+		z-index: 1;
+		bottom: 90px;
+		justify-content: center;
+		border-radius: 15px;
+		display: none;
+
+	}
+
+}
+/* pg 1 */
+/* body */
+main {
+    display: grid;
+    grid-template-columns: 1fr 300px 300px 300px;
+    grid-template-rows: 400px 300px 300px;
+    justify-content: center;
+    font-family: var(--paragraph-font);
+
+}
+/* hero */
+.hero-section {
+    grid-column: 1/5;
+    grid-row: 1/3;
+    border: 5px solid black;
+    border-radius: 15px;
+    margin: 30px;
+}
+#hero-text {
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.6);
+    color: white;
+    font-weight: bold;
+    border: 5px solid var(--accent3-color);
+    border-radius: 15px;
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 40%;
+    padding: 20px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+    
+}
+#info {
+    border: 5px solid black;
+    border-radius: 15px;
+    font-size: large;
+    margin: 30px;
+    height: 100%;
+    padding: 15px;
+}
+
+#hero-img {
+    margin-top: -0px;
+    height: 100%;
+    width: 100%;
+    object-fit: fit;
+    border: 5px red;
+    border-radius: 10px;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    top: 50%;
+    left: 50%;
+    
+}
+
+/* cards animation */
+.card-container {
+    background-color: transparent;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    height: 300px;
+    border: 5px solid black;
+    border-radius: 15px;
+    margin: 30px; 
+    margin-right: 15px;
+    perspective: 1000px; 
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card-container:hover .card {
+    transform: rotateY(180deg);
+}
+
+.card-img, .card-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+    
+}
+
+.card-img {
+    background-color: transparent;
+    
+}
+.back-img {
+    margin: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(10%);
+    border-radius: 15px;
+}
+
+.card-content {
+    border-radius: 10px;
+    color: black;
+    transform: rotateY(180deg);
+} 
+/* card position */
+#card-1 {
+    grid-row: 3;
+    grid-column: 2/3;
+    background-color: var(--accent1-color);
+}
+#card-2 {
+    grid-row: 3;
+    grid-column: 3/4;
+    background-color: var(--accent2-color);
+}
+#card-3 {
+    grid-row: 3;
+    grid-column: 4/5;
+    background-color: var(--accent3-color);
+}
+/* pg 2 */
+
+/* Style the */
+.pictureTab {
+    overflow: hidden;
+    background-color: var(--accent1-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 15px;
+    border-top: 5px solid black;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+    z-index: 0;
+}
+
+/* Style the buttons that are used to open the tab content */
+.pictureTab button {
+    background-color: var(--accent1-color);
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.5s;
+}
+/* Change background color of buttons on hover */
+.pictureTab button:hover {
+    background-color: var(--accent2-color);
+    border-radius: 15px;
+}
+/* Create an active/current tablink class */
+.pictureTab button.active {
+    background-color: var(--accent3-color);
+    border-radius: 15px;
+}
+/* Style the pictureTab content */
+.pictureTabcontent {
+    display: none;
+    border: 0px solid var(--accent1-color);
+    border-top: none;
+    margin: auto;
+    text-align: center;
+}
+.tabcontent {
+    margin: auto;
+    text-align: center;
+    background-color: var(--secondary-color);
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    border-radius: 0px 0px 15px 15px;
+    font-size: large;
+    padding: 15px;
+}
+#pic1 {
+    height: 50%;
+    width: 50%;
+    grid-column: 1;
+    margin: auto;
+}
+#pic2 {
+    height: 50%;
+    width: 50%;
+    grid-column: 1/2;
+    margin: auto;
+}
+#pic3 {
+    height: 50%;
+    width: 50%;
+    grid-column: 2/3;
+    margin: auto;
+}
+#pic4 {
+    height: 50%;
+    width: 50%;
+    grid-column: 3/4;
+    margin: auto;
+}
+#pic5 {
+    height: 50%;
+    width: 50%;
+    grid-column: 4/5;
+    margin: auto;
+}
+main {
+    min-height: 550px;
+    
+    
+/* margin-bottom: 10px; */
+}  
+/* pg 3 */
+
+.pg3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.pg3-imgs {
+    border-radius: 15px;
+    
+}
+.pg3-txt {
+    font-family: var(--paragraph-font);
+    padding: 10px;
+    border-radius: 15px;
+    margin: 15px;
+}
+
+#img1 {
+    grid-column: 1;
+    grid-row: 1;
+    object-fit: contain;
+    justify-content: center;
+    margin: auto;
+
+}
+#img2 {
+    grid-column: 2;
+    grid-row: 2;
+    object-fit: contain;
+    justify-content: center;
+    margin: auto;
+
+}
+#img3 {
+    grid-column: 1;
+    grid-row: 3;
+    object-fit: contain;
+    justify-content: center;
+    margin: auto;
+
+}
+#txt1 {
+    grid-column: 2;
+    grid-row: 1;
+    border: 5px solid var(--accent1-color);
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 15px;
+    
+}
+#txt2 {
+    grid-column: 1;
+    grid-row: 2;
+    border: 5px solid var(--accent2-color);
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 15px;
+}
+#txt3 {
+    grid-column: 2;
+    grid-row: 3;
+    border: 5px solid var(--accent3-color);
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 15px;
+}
+#tips-form {
+    grid-column: 3;
+    grid-row: 1/3;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    -ms-transform: translate(0%, 30%);
+    transform: translate(0%, 30%);
+    border: 5px solid var(--accent2-color);
+    border-radius: 15px;
+    padding: 15px;
+    font-family: var(--paragraph-font);
+
+}
