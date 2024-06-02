@@ -26,8 +26,31 @@ header {
 #header-content {
     height: 70px;
 }
+nav {
+    display: flex;
+    line-height: 4em;
+    font-size: 1.2em;
+    justify-content: center;
+    text-align: center;
+    font-size: larger;
+}
 
+nav a{
+    display: flex;
+    padding: 0em;
+    min-width: 120px;
+    text-decoration: none;
+    padding: 0px;
+    text-decoration: none;
+    border-bottom: 10px solid transparent;
+    width: 100%;
+    justify-content: center;
+    font-size: larger;
+}
 
+nav a:hover {
+    border-bottom: 10px solid var(--accent1-color);   
+}
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -118,10 +141,9 @@ main {
     display: none; 
     flex-direction: column;
     cursor: pointer;
+
 }
-.disable.active {
-    display: none;
-}
+
 .bar {
     width: 25px;
     height: 3px;
@@ -136,18 +158,32 @@ main {
     display: flex;
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin-left: 8px;
+    margin-right: 8px;
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    background-color: #333;
+    width: 85%;
+    padding: 20px; 
+    
 }
+
 
 .menu li {
     margin-right: 20px;
 }
-
 .menu li a {
-    color: #fff;
+    color: black;
     text-decoration: none;
 }
+.hamburger-menu {
+    display: flex; 
+    
+}
+.menu.active {
+    display: flex;
 
-header {
-    text-align: center;
 }
