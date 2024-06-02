@@ -55,7 +55,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    height: 200px;
+    height: 300px;
     margin-top: 100px;
     background-color: var(--footer-color);
     text-align: center;
@@ -131,11 +131,29 @@ footer {
 
 main {
     display: grid;
-    grid-template-rows: 6;
-    grid-template-columns: 2;
+    grid-template-rows: 8;
+    grid-template-columns: 1;
+    justify-content: center;
+}
+body {
+    font-family: var(--paragraph-font);
+    justify-content: center;
+    padding: 20px;
 }
 #hero-img {
     display: none;
+}
+#hero-text {
+    justify-content: center;
+    text-align: center;
+    border: 5px solid var(--accent1-color);
+    border-radius: 10px;
+}
+#info {
+    justify-content: center;
+    text-align: center;
+    border: 5px solid var(--accent2-color);
+    border-radius: 10px;
 }
 .hamburger-menu {
     display: none; 
@@ -149,7 +167,7 @@ main {
     height: 3px;
     background-color: black;
     margin: 3px 0;
-    margin-top: 10px    ;
+    margin-top: 5px;
     
     
 }
@@ -165,7 +183,9 @@ main {
     position: absolute;
     top: 75px;
     left: 0;
-    background-color: #333;
+    background-color: var(--accent3-color);
+    border-radius: 10px;
+    
     width: 85%;
     padding: 20px; 
     
@@ -186,4 +206,85 @@ main {
 .menu.active {
     display: flex;
 
+}
+
+.card-container {
+    border: 5px solid var(--accent3-color);
+    border-radius: 10px;
+    justify-content: center;
+}
+.card-content {
+    text-align: center;
+}
+.back-img {
+    border-radius: 10px;
+    justify-content: center;
+    margin: auto;
+}
+
+/* pg 2 */
+.tabs {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    background-color: var(--accent1-color);
+    border-radius: 15px;
+
+}
+.pictureTab {
+    border-radius: 15px;
+    justify-content: center;
+
+    overflow: hidden;
+    background-color: var(--accent1-color);
+    display: grid;
+    padding: 15px;
+    border-radius: 15px;
+}
+.pictureTab button:hover {
+    background-color: var(--accent2-color);
+    border-radius: 15px;
+}
+/* Create an active/current tablink class */
+.pictureTab button.active {
+    background-color: var(--accent3-color);
+    border-radius: 15px;
+}
+/* Style the pictureTab content */
+.pictureTabcontent {
+    display: none;
+    border: 0px solid var(--accent1-color);
+    border-top: none;
+    margin: auto;
+    text-align: center;
+}
+pic1 {
+    grid-row: 1;
+    grid-column: 1;
+    justify-content: center;
+    margin: auto;
+}
+pic2 {
+    grid-row: 2;
+    grid-column: 1;
+}
+pic3 {
+    grid-row: 3;
+    grid-column: 1;
+}
+pic4 {
+    grid-row: 4;
+    grid-column: 1;
+}
+pic5 {
+    grid-row: 5;
+    grid-column: 1;
+}
+.tabcontent {
+    margin: auto;
+    text-align: center;
+    background-color: var(--secondary-color);
+    border-radius: 0px 0px 15px 15px;
+    font-size: large;
+    padding: 15px;
 }
