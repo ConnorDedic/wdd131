@@ -9,6 +9,7 @@
     --heading-font: "Spectral", Helvetica, sans-serif;
     --paragraph-font: "Merriweather", Helvetica, sans-serif;
     background-color: silver;
+    font-size: large;
 }
 img {
     border-radius: 15px;
@@ -85,7 +86,7 @@ footer {
 	img[src*="images/logo-gif.gif"] {
 		position: relative;
 		z-index: 1;
-		bottom: 90px;
+		bottom: 91px;
 		justify-content: center;
 		border-radius: 15px;
 
@@ -120,7 +121,7 @@ footer {
 	img[src*="images/logo-gif.gif"] {
 		position: relative;
 		z-index: 1;
-		bottom: 90px;
+		bottom: 91px;
 		justify-content: center;
 		border-radius: 15px;
 		display: none;
