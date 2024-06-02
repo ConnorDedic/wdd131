@@ -8,7 +8,7 @@
     --light-font-color: white;
     --heading-font: "Spectral", Helvetica, sans-serif;
     --paragraph-font: "Merriweather", Helvetica, sans-serif;
-    background-color: honeydew;
+    background-color: silver;
 }
 img {
     border-radius: 15px;
@@ -148,12 +148,14 @@ body {
     text-align: center;
     border: 5px solid var(--accent1-color);
     border-radius: 10px;
+    padding: 10px;
 }
 #info {
     justify-content: center;
     text-align: center;
     border: 5px solid var(--accent2-color);
     border-radius: 10px;
+    padding: 10px;
 }
 .hamburger-menu {
     display: none; 
@@ -219,7 +221,7 @@ body {
 .back-img {
     border-radius: 10px;
     justify-content: center;
-    margin: auto;
+    margin-left: 30px;
 }
 
 /* pg 2 */
@@ -287,4 +289,90 @@ pic5 {
     border-radius: 0px 0px 15px 15px;
     font-size: large;
     padding: 15px;
+}
+
+/* pg3 */
+.pg3 {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 350 350 350 350 350 350 350;
+    margin-top: 75px;
+}
+
+.pg3-imgs {
+    border-radius: 15px;
+}
+.pg3-txt {
+    font-family: var(--paragraph-font);
+    padding: 10px;
+    border-radius: 15px;
+    margin: 15px;
+}
+
+#img1 {
+    grid-column: 1;
+    grid-row: 1;
+    object-fit: contain;
+    justify-content: center;
+    margin: auto;
+
+}
+#img2 {
+    grid-column: 1;
+    grid-row: 3;
+    object-fit: contain;
+    justify-content: center;
+    margin: auto;
+
+}
+#img3 {
+    grid-column: 1;
+    grid-row: 5;
+    object-fit: contain;
+    justify-content: center;
+    margin: auto;
+
+}
+#txt1 {
+    grid-column: 1;
+    grid-row: 2;
+    border: 5px solid var(--accent1-color);
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 15px;
+    
+}
+#txt2 {
+    grid-column: 1;
+    grid-row: 4;
+    border: 5px solid var(--accent2-color);
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 15px;
+}
+#txt3 {
+    grid-column: 1;
+    grid-row: 6;
+    border: 5px solid var(--accent3-color);
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 15px;
+}
+#tips-form {
+    grid-column: 1;
+    grid-row: 7;
+    justify-content: center;
+    text-align: center;
+    -ms-transform: translate(0%, 30%);
+    transform: translate(0%, 30%);
+    border: 5px solid var(--accent2-color);
+    border-radius: 15px;
+    padding: 15px;
+    font-family: var(--paragraph-font);
+    margin-top: 10px;
+    margin-bottom: 150px;
+
 }

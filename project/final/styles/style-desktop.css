@@ -8,7 +8,7 @@
     --light-font-color: white;
     --heading-font: "Spectral", Helvetica, sans-serif;
     --paragraph-font: "Merriweather", Helvetica, sans-serif;
-    background-color: honeydew;
+    background-color: silver;
 }
 img {
     border-radius: 15px;
@@ -147,7 +147,7 @@ ul {
 
 li {
     float: left;
-    padding: 10px;
+    padding: 20px;
 }
 /* hero */
 .hero-section {
