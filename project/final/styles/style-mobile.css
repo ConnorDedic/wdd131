@@ -114,18 +114,6 @@ main {
 #hero-img {
     display: none;
 }
-Styles for the hamburger menu 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-}
-nav.a:hover {
-    font-size: larger;
-}
 .hamburger-menu {
     display: none; 
     flex-direction: column;
@@ -135,11 +123,13 @@ nav.a:hover {
     display: none;
 }
 .bar {
-    width: 31px;
-    height: 5px;
+    width: 25px;
+    height: 3px;
     background-color: black;
     margin: 3px 0;
-
+    margin-top: 10px    ;
+    
+    
 }
 
 .menu {
