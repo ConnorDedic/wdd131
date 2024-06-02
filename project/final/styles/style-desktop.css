@@ -138,6 +138,17 @@ main {
     font-family: var(--paragraph-font);
 
 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+li {
+    float: left;
+    padding: 10px;
+}
 /* hero */
 .hero-section {
     grid-column: 1/5;
