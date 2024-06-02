@@ -26,7 +26,8 @@ header {
 #header-content {
     height: 70px;
 }
-nav {
+
+/* nav {
     display: flex;
     line-height: 4em;
     font-size: 1.2em;
@@ -50,7 +51,7 @@ nav a{
 
 nav a:hover {
     border-bottom: 10px solid var(--accent1-color);   
-}
+} */
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -137,53 +138,49 @@ main {
 #hero-img {
     display: none;
 }
+/* Styles for the hamburger menu */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+nav.a:hover {
+    font-size: larger;
+}
 .hamburger-menu {
     display: none; 
     flex-direction: column;
     cursor: pointer;
-
 }
-
+.disable.active {
+    display: none;
+}
 .bar {
-    width: 25px;
-    height: 3px;
-    background-color: black;
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
     margin: 3px 0;
-    margin-top: 10px    ;
-    
-    
 }
 
 .menu {
     display: flex;
     list-style-type: none;
     padding: 0;
-    margin-left: 8px;
-    margin-right: 8px;
-    display: none; 
-    flex-direction: column;
-    position: absolute;
-    top: 75px;
-    left: 0;
-    background-color: #333;
-    width: 85%;
-    padding: 20px; 
-    
+    margin: 0;
 }
-
 
 .menu li {
     margin-right: 20px;
 }
+
 .menu li a {
-    color: black;
+    color: #fff;
     text-decoration: none;
 }
-.hamburger-menu {
-    display: flex; 
-    
-}
-.menu.active {
-    display: flex;
 
+header {
+    text-align: center;
 }
